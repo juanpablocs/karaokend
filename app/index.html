@@ -8,28 +8,22 @@
     <meta name="description" content="">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/test.css"/>
-
-    <script>
-      var appData = {};
-      appData.usuarioLogin = false;
-    </script>
     
   </head>
 
   <body ng-app="starterApp" layout="column">
-    <div id="main" layout="column">
-      <div flex>
-        <h1>Karaokend</h1>
-      </div>
-      <div flex ng-view></div>
+    <h1>Karaokend</h1>
+    <div id="main">
+      <div ng-view></div>
     </div>
 
 
 
     <script src="./bower_components/angular/angular.js"></script>
-    <script src="./bower_components/angular-animate/angular-animate.js"></script>
     <script src="./bower_components/angular-route/angular-route.js"></script>
     <script src="./bower_components/angular-cookies/angular-cookies.js"></script>
+
+    <script src="./bower_components/angular-animate/angular-animate.js"></script>
     <script src="./bower_components/angular-aria/angular-aria.js"></script>
     <script src="./bower_components/angular-material/angular-material.js"></script>
 
@@ -37,6 +31,7 @@
 
     <script src="./src/app.js"></script>
     <script src="./src/controllers/home/homeController.js"></script>
+    <script src="./src/controllers/home/searchController.js"></script>
     <script src="./src/controllers/login/loginController.js"></script>
 
   </body>

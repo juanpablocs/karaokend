@@ -8,7 +8,7 @@
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }
-
+*{margin:0;padding:0;}
 html,body{
   background: #1C1C1F;
   color:#777;
@@ -20,6 +20,7 @@ h1{
   font-weight: 300;
   text-transform: uppercase;
   text-align: center;
+  margin-top:50px;
 }
 .md-button--connect{
   margin: 0 auto;
@@ -32,7 +33,6 @@ h1{
 #main{
   background: #27282B;
   max-width: 650px;
-  min-height: 200px;
   margin: 20px auto;
   width: 90%;
   padding:20px;
@@ -71,3 +71,8 @@ h1{
   width: 100px;
   height: 100px;
 }
+
+#show_results { font-size:12px;}
+#show_results .item_image{margin-right:10px;margin-top:12px;}
+#show_results h4{font-weight: 300;font-size: 14px;color:#999;}
+#show_results p{font-weight: 300;font-size:12px;}
