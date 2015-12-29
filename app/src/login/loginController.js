@@ -1,11 +1,7 @@
 (function () {
-    angular
-        .module('login', ['ngMaterial'])
-        .controller('loginController', testController);
-
-
-    function testController(){
+    function LoginController(){
         console.log(this);
         console.log('loginController');
     }
+    app.controller('LoginController', LoginController);
 })();

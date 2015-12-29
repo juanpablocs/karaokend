@@ -1,11 +1,7 @@
-(function () {
-    angular
-        .module('home', ['ngMaterial'])
-        .controller('homeController', testController);
-
-
-    function testController(){
+(function () { 
+    function HomeController(){
         console.log(this);
         console.log('homeController');
-    }
+    } 
+    app.controller('HomeController', HomeController);
 })();
