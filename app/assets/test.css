@@ -9,7 +9,7 @@
   display: none !important;
 }
 
-body{
+html,body{
   background: #1C1C1F;
   color:#777;
   margin:0;
@@ -21,9 +21,13 @@ h1{
   text-transform: uppercase;
   text-align: center;
 }
-.button--connect{}
-.button--connect .md-icon{
+.md-button--connect{
+  margin: 0 auto;
+  display: inherit;
+}
+.md-button--connect .md-icon{
   font-size: 18px !important;
+  margin-top:-2px;
 }
 #main{
   background: #27282B;
@@ -62,3 +66,8 @@ h1{
   font-feature-settings: 'liga';
 }
 
+#contentLoading{
+  margin: 10px auto;
+  width: 100px;
+  height: 100px;
+}

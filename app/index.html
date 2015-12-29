@@ -11,50 +11,33 @@
 
     <script>
       var appData = {};
-      appData.usuarioLogin = true;
+      appData.usuarioLogin = false;
     </script>
     
   </head>
 
   <body ng-app="starterApp" layout="column">
+    <div id="main" layout="column">
+      <div flex>
+        <h1>Karaokend</h1>
+      </div>
+      <div flex ng-view></div>
+    </div>
 
-    <div ng-view></div>
-      
+
+
     <script src="./bower_components/angular/angular.js"></script>
     <script src="./bower_components/angular-animate/angular-animate.js"></script>
     <script src="./bower_components/angular-route/angular-route.js"></script>
+    <script src="./bower_components/angular-cookies/angular-cookies.js"></script>
     <script src="./bower_components/angular-aria/angular-aria.js"></script>
     <script src="./bower_components/angular-material/angular-material.js"></script>
 
+    <script src="./src/services/googleplus.js"></script>
+
     <script src="./src/app.js"></script>
-    <script src="./src/home/homeController.js"></script>
-    <script src="./src/login/loginController.js"></script>
+    <script src="./src/controllers/home/homeController.js"></script>
+    <script src="./src/controllers/login/loginController.js"></script>
 
-    
-    <!-- Vista de index -->
-    <script type="text/ng-template" id="index.html">
-      <div id="contentApp" layout="row">
-        <p> Bienvenido usuario {{user}} </p>
-     </div>
-    </script>
-
-    <!-- Vista de Login  -->
-    <script type="text/ng-template" id="login.html">
-     <div id="main" layout="column">
-	esta capa seria login
-	<div id="loginApp" layout="column">
-          <div flex>
-            <h1> Title here!</h1>
-          </div>
-          <div flex>
-            <md-button class="md-raised md-primary md-cornered md-button--conect" ng-click="acceptOffer();">
-              <md-icon md-font-set="material-icons" class="md-icon"> person </md-icon> Conect google
-            </md-button>
-          </div>
-	</div>
-      </div>
-    </script>
-
-    
   </body>
 </html>
